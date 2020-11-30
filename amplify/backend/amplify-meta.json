@@ -1,0 +1,38 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-heliumapp-dev-221421-authRole",
+      "UnauthRoleArn": "arn:aws:iam::174413414611:role/amplify-heliumapp-dev-221421-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::174413414611:role/amplify-heliumapp-dev-221421-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-heliumapp-dev-221421-deployment",
+      "UnauthRoleName": "amplify-heliumapp-dev-221421-unauthRole",
+      "StackName": "amplify-heliumapp-dev-221421",
+      "StackId": "arn:aws:cloudformation:us-east-1:174413414611:stack/amplify-heliumapp-dev-221421/252d8c60-32ba-11eb-9d8f-12417e4a260f",
+      "AmplifyAppId": "d4ip3wa1k6g8u"
+    }
+  },
+  "auth": {
+    "heliumapp574ff0a5": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-heliumapp-dev-221421-deployment/amplify-cfn-templates/auth/heliumapp574ff0a5-cloudformation-template.yml",
+        "logicalId": "authheliumapp574ff0a5"
+      },
+      "lastPushTimeStamp": "2020-11-30T03:19:38.929Z",
+      "output": {
+        "AppClientSecret": "miga92fs2qurspm0lh22dsdobmeur7mhfmdircv3b7s10f8p4q6",
+        "UserPoolId": "us-east-1_EeLqYSqck",
+        "AppClientIDWeb": "6tc47khec2lgf5v7u0nou8c44v",
+        "AppClientID": "68hu8psnqqgamjq8odum20dout",
+        "IdentityPoolId": "us-east-1:5997a2c4-b75e-4c2c-a046-dff7f53228aa",
+        "IdentityPoolName": "heliumapp574ff0a5_identitypool_574ff0a5__dev",
+        "UserPoolName": "heliumapp574ff0a5_userpool_574ff0a5"
+      },
+      "lastPushDirHash": "kJSnCQdDGArHQ2ioW+Mr80BGYbg="
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "heliumapp574ff0a5": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
