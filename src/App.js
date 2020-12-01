@@ -18,7 +18,20 @@ class App extends Component {
     this.getDataAxios();
   }
 
-  async getDataAxios() {
+  getDataAxios() {
+    const api =
+      "https://370nc65kwi.execute-api.us-east-1.amazonaws.com/staging";
+    const data = { name: "Mike" };
+    axios
+      .post(api, data)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    /*
+
     const response = await axios.post(
       "https://console.helium.com/api/v1/down/d9804ab8-4597-4120-93ce-604e06e2b011/mH5J_JuND0P4M_vUTVyYfz4X11v0JiOz",
       {
@@ -26,9 +39,15 @@ class App extends Component {
         port: 1,
         confirmed: false,
       },
-      { headers: { "Content-Type": "application/json" } }
-    );
-    console.log(response.data);
+      {
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+      }
+    );*/
+
+    //console.log(response.data);
   }
 
   render() {
